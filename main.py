@@ -57,7 +57,7 @@ def write_to_mongo(dtime, long, lat):
         # use an ENV variable for the password
         dbpass = os.getenv('MONGOPASS')
         if not dbpass:
-            raise ValueError("MONGOPASS environment variable is not set")
+            raise ValueError("MONGOPASS environment variable is not set.")
             logging.error("MONGOPASS environment variable is not set")
             exit(1)
             
